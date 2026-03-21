@@ -25,7 +25,7 @@ export default function GetInTouch() {
           <h2 className="text-3xl sm:text-4xl font-bold text-primary-strong mb-3">
             Get In Touch
           </h2>
-          <p className="text-sm sm:text-base font-semibold text-text-secondary max-w-xl mx-auto">
+          <p className="text-sm sm:text-lg font-semibold text-text-primary max-w-xl mx-auto">
             Have a question or want to book an appointment? Reach out to us and
             our team will get back to you as soon as possible.
           </p>
@@ -35,6 +35,16 @@ export default function GetInTouch() {
 
           {/* Left — Contact Info */}
           <div className="flex flex-col gap-6 justify-center">
+
+            {/* Header + Description — Phone ke upar */}
+            <div>
+              <h3 className=" text-2xl md:text-4xl font-bold text-primary-strong mb-2">
+                Contact Information
+              </h3>
+              <p className="text-sm text-text-secondary">
+                Fill out the form or reach us directly through any of the channels below.
+              </p>
+            </div>
 
             <div className="flex items-start gap-4">
               <div className="flex justify-center items-center bg-surface border border-border rounded-full h-12 w-12 shrink-0">
@@ -66,8 +76,8 @@ export default function GetInTouch() {
               </div>
               <div>
                 <p className="font-semibold text-text-primary text-sm">Address</p>
-                
-                <a  href="https://www.google.com/maps/place/Sunshine+State+Women's+Care,+LLC/"
+                <a
+                  href="https://www.google.com/maps/place/Sunshine+State+Women's+Care,+LLC/"
                   target="_blank"
                   className="text-sm text-text-secondary hover:text-primary-strong transition-colors"
                 >

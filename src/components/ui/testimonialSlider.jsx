@@ -34,7 +34,7 @@ export default function TestimonialSlider() {
 
   return (
     <section className="w-full py-14 md:py-20 bg-surface">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold text-primary-strong mb-10 md:mb-12 px-4">
+      <h2 className="text-center text-3xl md:text-4xl font-semibold text-primary-strong mb-10 md:mb-12 px-4">
         Testimonials
       </h2>
 
@@ -57,10 +57,10 @@ export default function TestimonialSlider() {
           >
             {testimonials.map((t, i) => (
               <div key={i} className="min-w-full w-full text-center px-2">
-                <p className="text-base md:text-lg text-text-secondary mb-6 leading-relaxed">
+                <p className="text-base md:text-lg text-text-primary mb-6 leading-relaxed">
                   "{t.text}"
                 </p>
-                <p className="font-semibold text-sm md:text-base text-text-primary">
+                <p className="font-semibold text-sm md:text-base text-text-secondary">
                   {t.name}
                 </p>
               </div>

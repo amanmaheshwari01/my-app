@@ -16,7 +16,7 @@ export default function ServiceSection() {
         <h1 className="text-3xl lg:text-4xl font-bold text-primary-strong">
           Services and Procedures
         </h1>
-        <p className="text-lg lg:text-xl text-text-secondary font-semibold max-w-2xl">
+        <p className="text-lg lg:text-xl text-text-primary font-semibold max-w-2xl">
           Explore our range of specialized healthcare services designed for
           your comfort and well-being.
         </p>
