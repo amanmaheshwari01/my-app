@@ -2,7 +2,7 @@ import { UserRound, Stethoscope, Heart, Shield } from "lucide-react";
 
 export default function WhyChooseUs({ data }) {
   return (
-    <section className="w-full py-20 bg-surface">
+    <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-14">

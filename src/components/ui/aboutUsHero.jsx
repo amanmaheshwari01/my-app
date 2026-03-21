@@ -8,7 +8,7 @@ export default function AboutUsHero() {
         className="w-full h-[500px] object-cover"
       />
 
-      <div className="absolute inset-0 bg-primary-strong/40 flex items-center justify-center px-4">
+      <div className="absolute inset-0 bg-secondary/20 flex items-center justify-center px-4">
         <div className="max-w-2xl text-center flex flex-col gap-4">
 
           <h2 className="text-3xl sm:text-4xl font-bold text-background">

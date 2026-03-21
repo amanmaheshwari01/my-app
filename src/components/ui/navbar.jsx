@@ -15,12 +15,12 @@ const handleContact = async () => {
   router.push("#contact")
 }
   return (
-    <div className="bg-background shadow-sm sticky top-0 z-50 border-b border-border">
+    <div className=" shadow-sm sticky top-0 z-50 border-b border-border">
       <div className="flex items-center justify-between px-3 sm:px-5 md:px-8 lg:px-10 py-3 max-w-7xl mx-auto gap-4">
 
         {/* Logo */}
         <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary leading-none shrink-0">
-          <Link href="/" className="hover:text-[#56D6BB] transition-colors">
+          <Link href="/" className=" transition-colors hover:text-primary-strong">
             Clinic
           </Link>
         </h1>
@@ -47,7 +47,7 @@ const handleContact = async () => {
               Services
               <ChevronDown
                 size={13}
-                className="transition-transform duration-200 group-hover:rotate-180"
+                className="transition-transform duration-200 group-hover:rotate-180 in"
               />
             </button>
 
@@ -55,19 +55,19 @@ const handleContact = async () => {
               <div className="flex flex-col p-2 gap-1">
                 <Link
                   href="/services/pregnancy-care"
-                  className="px-3 py-2 rounded-md text-text-secondary hover:bg-surface hover:text-text-primary text-xs sm:text-sm transition-colors"
+                  className="px-3 py-2 rounded-md text-text-secondary hover:bg-secondary/10 hover:text-text-primary text-xs sm:text-sm transition-colors"
                 >
                   Pregnancy Care
                 </Link>
                 <Link
                   href="/services/fertility"
-                  className="px-3 py-2 rounded-md text-text-secondary hover:bg-surface hover:text-text-primary text-xs sm:text-sm transition-colors"
+                  className="px-3 py-2 rounded-md text-text-secondary hover:bg-secondary/10 hover:text-text-primary text-xs sm:text-sm transition-colors"
                 >
                   Fertility
                 </Link>
                 <Link
                   href="/services/parentalCare"
-                  className="px-3 py-2 rounded-md text-text-secondary hover:bg-surface hover:text-text-primary text-xs sm:text-sm transition-colors"
+                  className="px-3 py-2 rounded-md text-text-secondary hover:bg-secondary/10 hover:text-text-primary text-xs sm:text-sm transition-colors"
                 >
                   Parental Care
                 </Link>
@@ -84,7 +84,7 @@ const handleContact = async () => {
         </nav>
 
         {/* CTA Button */}
-        <button onClick={handleContact} className="hidden min-[540px]:block shrink-0 bg-primary-strong text-background px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full   transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap font-medium">
+        <button onClick={handleContact} className="hidden min-[540px]:block shrink-0 bg-primary hover:bg-primary-strong text-background px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap font-medium">
           Book Appointment
         </button>
 
