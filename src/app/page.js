@@ -10,7 +10,7 @@ export default function Home() {
   
 const features =  [
     {
-      title: "aman",
+      title: "Experienced gyncecologist",
       desc: "Our specialists provide expert care for women at every stage of life with years of clinical experience.",
       icon: <UserRoundCheckIcon size={40} />,
     },

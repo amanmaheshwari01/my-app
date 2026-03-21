@@ -6,18 +6,18 @@ const steps = [
 
 export default function WhatToExpect() {
   return (
-    <div className="w-full py-14 px-4 bg-warm-cream">
+    <div className="w-full py-14 px-4 bg-surface">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-saddle-brown text-center mb-10">
+        <h2 className="text-2xl sm:text-3xl font-bold text-primary-strong text-center mb-10">
           What to Expect
         </h2>
         <div className="flex flex-col gap-6">
           {steps.map(({ step, title, desc }) => (
-            <div key={step} className="flex items-start gap-6 bg-white rounded-xl p-6 border border-gray-200">
-              <span className="text-3xl font-bold text-pink-300 shrink-0">{step}</span>
+            <div key={step} className="flex items-start gap-6 bg-background rounded-xl p-6 border border-border hover:shadow-sm transition-shadow">
+              <span className="text-3xl font-bold text-primary shrink-0">{step}</span>
               <div>
-                <h3 className="font-semibold text-saddle-brown text-lg mb-1">{title}</h3>
-                <p className="text-sm text-modern-earthy leading-relaxed">{desc}</p>
+                <h3 className="font-semibold text-text-primary text-lg mb-1">{title}</h3>
+                <p className="text-sm text-text-secondary leading-relaxed">{desc}</p>
               </div>
             </div>
           ))}

@@ -16,7 +16,7 @@ const faqs = [
 export default function Page() {
   const gynecologyServices = [
   {
-    title: "Prenatal Care",
+    title: "Parental Care",
     description:
       "Comprehensive care during pregnancy including regular checkups, fetal monitoring, nutritional guidance, and emotional support to ensure a healthy journey for both mother and baby.",
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309"
@@ -43,7 +43,7 @@ export default function Page() {
 
 const features =  [
     {
-      title: "vish",
+      title: "Experienced Gynecologists",
       desc: "Our specialists provide expert care for women at every stage of life with years of clinical experience.",
       icon: <UserRoundCheck size={40} />,
     },

@@ -52,6 +52,5 @@ export default function Page() {
       <Carousel slides={slideData} /></div>
       <FAQ data = {faqs} />
     </div>
-    
   )
 }

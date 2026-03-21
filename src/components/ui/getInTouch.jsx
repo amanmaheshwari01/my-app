@@ -17,59 +17,59 @@ export default function GetInTouch() {
   };
 
   return (
-    <section className="w-full bg-warm-cream py-14 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section id="contact" className="w-full bg-surface py-14 px-4">
+      <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-saddle-brown mb-3">
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary-strong mb-3">
             Get In Touch
           </h2>
-          <p className="text-sm sm:text-base text-modern-earthy max-w-xl mx-auto">
+          <p className="text-sm sm:text-base text-text-secondary max-w-xl mx-auto">
             Have a question or want to book an appointment? Reach out to us and
             our team will get back to you as soon as possible.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
 
           {/* Left — Contact Info */}
           <div className="flex flex-col gap-6 justify-center">
 
             <div className="flex items-start gap-4">
-              <div className="bg-pink-100 p-3 rounded-full shrink-0">
-                <Phone size={20} className="text-classy-red" />
+              <div className="flex justify-center items-center bg-surface border border-border rounded-full h-12 w-12 shrink-0">
+                <Phone size={20} className="text-primary" />
               </div>
               <div>
-                <p className="font-semibold text-saddle-brown text-sm">Phone</p>
-                <a href="tel:5613682005" className="text-sm text-modern-earthy hover:text-saddle-brown transition">
+                <p className="font-semibold text-text-primary text-sm">Phone</p>
+                <a href="tel:5613682005" className="text-sm text-text-secondary hover:text-primary-strong transition-colors">
                   (561) 368-2005
                 </a>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="bg-pink-100 p-3 rounded-full shrink-0">
-                <Mail size={20} className="text-classy-red" />
+              <div className="flex justify-center items-center bg-surface border border-border rounded-full h-12 w-12 shrink-0">
+                <Mail size={20} className="text-primary" />
               </div>
               <div>
-                <p className="font-semibold text-saddle-brown text-sm">Email</p>
-                <a href="mailto:drzann@comcast.net" className="text-sm text-modern-earthy hover:text-saddle-brown transition">
+                <p className="font-semibold text-text-primary text-sm">Email</p>
+                <a href="mailto:drzann@comcast.net" className="text-sm text-text-secondary hover:text-primary-strong transition-colors">
                   drzann@comcast.net
                 </a>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="bg-pink-100 p-3 rounded-full shrink-0">
-                <MapPin size={20} className="text-classy-red" />
+              <div className="flex justify-center items-center bg-surface border border-border rounded-full h-12 w-12 shrink-0">
+                <MapPin size={20} className="text-primary" />
               </div>
               <div>
-                <p className="font-semibold text-saddle-brown text-sm">Address</p>
+                <p className="font-semibold text-text-primary text-sm">Address</p>
                 
-                  <a href="https://www.google.com/maps/place/Sunshine+State+Women's+Care,+LLC/"
+                <a  href="https://www.google.com/maps/place/Sunshine+State+Women's+Care,+LLC/"
                   target="_blank"
-                  className="text-sm text-modern-earthy hover:text-saddle-brown transition"
+                  className="text-sm text-text-secondary hover:text-primary-strong transition-colors"
                 >
                   660 Glades Rd. Suite 240 <br /> Boca Raton, FL 33431
                 </a>
@@ -79,60 +79,60 @@ export default function GetInTouch() {
           </div>
 
           {/* Right — Form */}
-          <div className="bg-white rounded-2xl border border-gray-200 p-8 flex flex-col gap-4">
+          <div className="bg-background rounded-2xl border border-border p-8 flex flex-col gap-4">
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1">
-                <label className="text-xs font-medium text-saddle-brown">Full Name</label>
+                <label className="text-xs font-medium text-text-primary">Full Name</label>
                 <input
                   type="text"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Jane Doe"
-                  className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+                  className="border border-border rounded-lg px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary bg-surface focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <label className="text-xs font-medium text-saddle-brown">Phone</label>
+                <label className="text-xs font-medium text-text-primary">Phone</label>
                 <input
                   type="tel"
                   name="phone"
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="(561) 000-0000"
-                  className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+                  className="border border-border rounded-lg px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary bg-surface focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-xs font-medium text-saddle-brown">Email</label>
+              <label className="text-xs font-medium text-text-primary">Email</label>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
                 placeholder="jane@example.com"
-                className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+                className="border border-border rounded-lg px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary bg-surface focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>
 
             <div className="flex flex-col gap-1">
-              <label className="text-xs font-medium text-saddle-brown">Message</label>
+              <label className="text-xs font-medium text-text-primary">Message</label>
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 placeholder="How can we help you?"
                 rows={4}
-                className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300 resize-none"
+                className="border border-border rounded-lg px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary bg-surface focus:outline-none focus:ring-2 focus:ring-primary resize-none"
               />
             </div>
 
             <button
               onClick={handleSubmit}
-              className="w-full bg-pink-500 text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-pink-600 transition mt-2"
+              className="w-full bg-primary text-background py-2.5 rounded-full text-sm font-semibold hover:bg-primary-strong transition-colors mt-2"
             >
               Send Message
             </button>

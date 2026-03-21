@@ -21,7 +21,7 @@ export default function HeroSection() {
 
         {/* Right: Text + Button */}
         <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-6 text-center lg:text-left items-center lg:items-start">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-saddle-brown">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-saddle-brown ">
             Dedicated to Women's Health
           </h1>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-playfair text-modern-earthy">
@@ -34,7 +34,7 @@ export default function HeroSection() {
           </p>
           
             <a href="#services"
-            className="inline-flex items-center gap-2 bg-terracotta-accent text-warm-cream px-6 py-3 rounded-lg border-2 border-saddle-brown font-playfair font-semibold hover:bg-saddle-brown hover:text-warm-cream transition text-sm sm:text-base"
+            className="inline-flex items-center gap-2 bg-terracotta-accent text-warm-cream px-6 py-3 rounded-lg border-2 border-saddle-brown font-playfair font-semibold hover:bg-transparent hover:text-terracotta-accent hover:border-terracotta-accent hover:-translate-y-0.5 hover:shadow-md hover:gap-4 transition-all duration-200 text-sm sm:text-base"
           >
             Explore our services
             <ArrowRight size={18} />

@@ -13,10 +13,10 @@ export default function ServiceSection() {
 
       {/* Heading */}
       <div className="flex flex-col items-center gap-4 text-center">
-        <h1 className="text-3xl lg:text-4xl font-playfair font-bold text-saddle-brown">
+        <h1 className="text-3xl lg:text-4xl font-bold text-primary-strong">
           Services and Procedures
         </h1>
-        <p className="text-lg lg:text-xl text-modern-earthy max-w-2xl">
+        <p className="text-lg lg:text-xl text-text-secondary max-w-2xl">
           Explore our range of specialized healthcare services designed for
           your comfort and well-being.
         </p>
@@ -27,11 +27,11 @@ export default function ServiceSection() {
         {services.map(({ icon: Icon, title, desc }) => (
           <div
             key={title}
-            className="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-200 bg-white hover:shadow-md transition"
+            className="flex flex-col items-center gap-3 p-6 rounded-xl border border-border bg-background hover:bg-surface transition-colors"
           >
-            <Icon className="text-blue-400" size={52} />
-            <p className="text-base md:text-lg font-medium text-center">{title}</p>
-            <p className="text-center">{desc}</p>
+            <Icon className="text-primary" size={52} />
+            <p className="text-base md:text-lg font-medium text-center text-text-primary">{title}</p>
+            <p className="text-center text-text-secondary text-sm">{desc}</p>
           </div>
         ))}
       </div>

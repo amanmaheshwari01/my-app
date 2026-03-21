@@ -1,17 +1,28 @@
 @import "tailwindcss";
-@plugin "tailwindcss-animate";
-
 
 @theme{
-  --color-classy-red: #FF0000;
-  --color-simple-white: #ffffff;
-  --color-light-purple: #8250de;
-  --color-dark-purple: #6E51A4;
-  --color-modern-earthy: #8b9a6b;
-  --color-terracotta-accent: #c68642;
-  --color-light-gray: #d3d3d3;
-  --color-deep-brown: #5c3d2e;
-  --color-honey-highlight: #e8b595;
+/* Brand */
+--color-primary: #00A896;
+--color-primary-strong: #05668D;
+
+--color-secondary: #028090;
+--color-secondary-soft: #02C39A;
+
+/* Accent / Highlight */
+--color-accent: #F0F3BD;
+--color-accent-soft: #F7F9DC;
+
+/* Feedback */
+--color-danger: #FF0000;
+
+/* Neutral */
+--color-background: #F7F9FA;
+--color-surface: #EEF6F7;
+--color-border: #B2D8DC;
+
+/* Text */
+--color-text-primary: #05668D;
+--color-text-secondary: #028090;
 
   --font-playfair: var(--font-playfair);
   --font-lato: var(--font-lato);
@@ -23,32 +34,27 @@
 
 :root {
   /* Legacy/JS variables match theme */
-  --warm-cream: #f5f0e1;
-  --saddle-brown: #776738;
+  --warm-cream: #f2f2f2;
+  --saddle-brown: #2b6777;
   --light-brown: #f2d98e; 
-  --modern-earthy: #8b9a6b;
+  --modern-earthy: #52ab98;
   --terracotta-accent: #c68642;
   --light-gray: #d3d3d3;
-  --deep-brown: #5c3d2e;
+  --deep-brown: #2b6777;
   --honey-highlight: #e8b595;
 
   --radius: 0.625rem;
-  --background: var(--warm-cream);
   --foreground: var(--saddle-brown);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -97,22 +103,17 @@ body {
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
-  --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
-  --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-chart-1: var(--chart-1);
@@ -133,22 +134,17 @@ body {
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -188,38 +184,3 @@ body {
   display: none;
 }
 
-/* Facebook-style top loading bar animation */
-@keyframes loading-bar {
-  0% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-
-.animate-loading-bar {
-  animation: loading-bar 1.2s ease-in-out infinite;
-}
-
-/* Force specific colors for blog content to override any prose defaults */
-.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-  color: #8B4513 !important;
-  font-family: var(--font-playfair) !important;
-}
-
-/* Ensure bold text INSIDE headings stays saddle brown */
-.prose h1 strong, .prose h2 strong, .prose h3 strong, 
-.prose h4 strong, .prose h5 strong, .prose h6 strong {
-  color: #8B4513 !important;
-}
-
-/* General bold text stays modern earthy */
-.prose strong {
-  color: var(--modern-earthy) !important;
-  font-weight: 700 !important;
-}
