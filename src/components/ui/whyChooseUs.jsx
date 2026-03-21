@@ -9,7 +9,7 @@ export default function WhyChooseUs({ data }) {
           <h2 className="text-4xl font-bold text-primary-strong mb-4">
             Why Choose Our Clinic
           </h2>
-          <p className="text-text-secondary max-w-2xl mx-auto">
+          <p className="text-text-secondary font-semibold max-w-2xl mx-auto">
             Dedicated to providing compassionate, expert, and modern
             gynecological care for women's health and well-being.
           </p>
@@ -25,11 +25,11 @@ export default function WhyChooseUs({ data }) {
                 {item.icon}
               </div>
 
-              <h3 className="text-xl font-semibold text-text-primary mb-3">
+              <h3 className="text-xl font-semibold text-text-secondary mb-3">
                 {item.title}
               </h3>
 
-              <p className="text-text-secondary text-sm leading-relaxed">
+              <p className="text-text-primary text-sm leading-relaxed">
                 {item.desc}
               </p>
             </div>

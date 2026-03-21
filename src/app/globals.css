@@ -21,8 +21,9 @@
 --color-border: #B2D8DC;
 
 /* Text */
---color-text-primary: #05668D;
---color-text-secondary: #028090;
+--color-text-primary: #546373;
+--color-text-secondary: #0b1c24;
+
 
   --font-playfair: var(--font-playfair);
   --font-lato: var(--font-lato);

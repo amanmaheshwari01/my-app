@@ -25,7 +25,7 @@ export default function GetInTouch() {
           <h2 className="text-3xl sm:text-4xl font-bold text-primary-strong mb-3">
             Get In Touch
           </h2>
-          <p className="text-sm sm:text-base text-text-secondary max-w-xl mx-auto">
+          <p className="text-sm sm:text-base font-semibold text-text-secondary max-w-xl mx-auto">
             Have a question or want to book an appointment? Reach out to us and
             our team will get back to you as soon as possible.
           </p>

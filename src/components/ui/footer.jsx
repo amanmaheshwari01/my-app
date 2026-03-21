@@ -11,7 +11,7 @@ export default function Footer() {
             Sunshine State <br />
             <span className="tracking-widest text-text-secondary">Women's Care</span>
           </h2>
-          <p className="text-sm text-text-secondary leading-relaxed">
+          <p className="text-sm text-text-primary font-semibold leading-relaxed">
             Providing compassionate and professional gynecological care for women
             in a comfortable and supportive environment.
           </p>
@@ -33,7 +33,7 @@ export default function Footer() {
           <h3 className="text-base font-semibold text-text-primary uppercase tracking-widest">
             Contact
           </h3>
-          <div className="flex flex-col gap-3 text-sm text-text-secondary">
+          <div className="flex flex-col gap-3 text-sm text-text-primary">
             <a href="tel:5613682005" className="hover:text-primary-strong transition-colors">
               (561) 368-2005
             </a>

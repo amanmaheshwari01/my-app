@@ -24,10 +24,10 @@ export default function HeroSection() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-primary ">
             Dedicated to Women's Health
           </h1>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-playfair text-modern-earthy">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-playfair text-text-secondary">
             Providing an Excellent Experience
           </h2>
-          <p className="text-base sm:text-lg text-saddle-brown leading-relaxed max-w-lg">
+          <p className="sm:text-lg text-text-primary leading-relaxed max-w-lg">
             Sunshine State Women's Care is committed to providing the highest
             quality care to all our patients. Our friendly, compassionate staff
             ensures comfort and quality care at every visit.
