@@ -1,6 +1,6 @@
 import { UserRound, Stethoscope, Heart, Shield } from "lucide-react";
 
-export default function WhyChooseUs({ data }) {
+export default function WhyChooseUs({ data , fontClass }) {
   return (
     <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-8">
@@ -21,15 +21,14 @@ export default function WhyChooseUs({ data }) {
               key={i}
               className="bg-background rounded-2xl border border-border p-8 text-center hover:shadow-md transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="mb-4 flex justify-center text-primary">
+              <div className={`mb-4 flex justify-center text-primary`}>
                 {item.icon}
               </div>
 
-              <h3 className="text-xl font-semibold text-text-secondary mb-3">
+              <h3 className={`${fontClass?"text-xl":"text-xl"} font-semibold text-text-secondary mb-3`}>
                 {item.title}
               </h3>
-
-              <p className="text-text-primary text-base leading-relaxed">
+              <p className={`${fontClass?fontClass:"text-base"} text-text-primary leading-relaxed `}>
                 {item.desc}
               </p>
             </div>
