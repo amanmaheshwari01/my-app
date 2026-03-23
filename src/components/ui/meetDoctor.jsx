@@ -24,7 +24,7 @@ export default function MeetDoctor() {
 
         <div className="mt-6">
           
-          <a  href="/meet-the-doctor"
+          <a  href="/about"
             className="inline-block bg-primary text-background px-6 py-2 rounded-full border border-border text-sm sm:text-base hover:bg-primary-strong transition-colors"
           >
             Learn More About Dr. Zann

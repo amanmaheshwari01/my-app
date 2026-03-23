@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight} from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -32,13 +33,12 @@ export default function HeroSection() {
             quality care to all our patients. Our friendly, compassionate staff
             ensures comfort and quality care at every visit.
           </p>
-          
-            <a href="#services"
+            <Link href="/services/parentalCare"
             className="inline-flex items-center gap-2  hover:bg-secondary/20 px-6 py-3 rounded-lg border-2 border-saddle-brown font-playfair font-semibold hover:text-terracotta-accent hover:border-terracotta-accent hover:-translate-y-0.5 hover:shadow-md hover:gap-4 transition-all duration-200 text-sm sm:text-base"
           >
             Explore our services
             <ArrowRight size={18} />
-          </a>
+            </Link>
         </div>
 
       </div>
