@@ -16,8 +16,8 @@ export default function WhatToExpect() {
             <div key={step} className="flex items-start gap-6 bg-background rounded-xl p-6 border border-border hover:shadow-sm transition-shadow">
               <span className="text-3xl font-bold text-primary shrink-0">{step}</span>
               <div>
-                <h3 className="font-semibold text-text-primary text-lg mb-1">{title}</h3>
-                <p className="text-sm text-text-secondary leading-relaxed">{desc}</p>
+                <h3 className="font-semibold text-text-secondary text-lg mb-1">{title}</h3>
+                <p className="text-sm text-text-primary leading-relaxed">{desc}</p>
               </div>
             </div>
           ))}

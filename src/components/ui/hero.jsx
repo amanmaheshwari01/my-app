@@ -24,7 +24,7 @@ export default function HeroSection() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-primary ">
             Dedicated to Women's Health
           </h1>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-playfair text-text-secondary">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-playfair text-text-primary font-semibold">
             Providing an Excellent Experience
           </h2>
           <p className="sm:text-lg text-text-primary leading-relaxed max-w-lg">

@@ -13,7 +13,7 @@ export default function ContactUs() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
 
             <div>
-              <label htmlFor="first-name" className="block text-sm font-medium text-text-primary">
+              <label htmlFor="first-name" className="block text-md font-medium text-text-secondary">
                 First name
               </label>
               <input
@@ -25,7 +25,7 @@ export default function ContactUs() {
             </div>
 
             <div>
-              <label htmlFor="last-name" className="block text-sm font-medium text-text-primary">
+              <label htmlFor="last-name" className="block text-md font-medium text-text-secondary">
                 Last name
               </label>
               <input
@@ -37,7 +37,7 @@ export default function ContactUs() {
             </div>
 
             <div className="sm:col-span-2">
-              <label htmlFor="email" className="block text-sm font-medium text-text-primary">
+              <label htmlFor="email" className="block text-md font-medium text-text-secondary">
                 Email
               </label>
               <input
@@ -49,7 +49,7 @@ export default function ContactUs() {
             </div>
 
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="block text-sm font-medium text-text-primary">
+              <label htmlFor="message" className="block text-md font-medium text-text-secondary">
                 Message
               </label>
               <textarea

@@ -3,13 +3,13 @@ import { Globe, MessageCircle, Pin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 py-14 flex flex-col md:flex-row justify-between gap-10">
+      <div className="max-w-7xl mx-auto px-8 py-14 flex flex-col md:flex-row justify-between gap-10">
 
         {/* Clinic */}
         <div className="flex flex-col gap-4 max-w-xs">
           <h2 className="text-xl font-bold text-primary-strong">
             Sunshine State <br />
-            <span className="tracking-widest text-text-secondary">Women's Care</span>
+            <span className="tracking-widest text-text-primary">Women's Care</span>
           </h2>
           <p className="text-sm text-text-primary font-semibold leading-relaxed">
             Providing compassionate and professional gynecological care for women
@@ -30,20 +30,20 @@ export default function Footer() {
 
         {/* Contact */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-base font-semibold text-text-primary uppercase tracking-widest">
+          <h3 className="text-base font-bold text-text-primary uppercase tracking-widest">
             Contact
           </h3>
           <div className="flex flex-col gap-3 text-sm text-text-primary">
-            <a href="tel:5613682005" className="hover:text-primary-strong transition-colors">
+            <a href="tel:5613682005" className="hover:text-text-secondary transition-colors">
               (561) 368-2005
             </a>
-            <a href="mailto:drzann@comcast.net" className="hover:text-primary-strong transition-colors">
+            <a href="mailto:drzann@comcast.net" className="hover:text-text-secondary transition-colors">
               drzann@comcast.net
             </a>
             
             <a  href="https://www.google.com/maps/place/Sunshine+State+Women's+Care,+LLC/"
               target="_blank"
-              className="hover:text-primary-strong transition-colors leading-relaxed"
+              className="hover:text-text-secondary transition-colors leading-relaxed"
             >
               660 Glades Rd. Suite 240 <br /> Boca Raton, FL 33431
             </a>
@@ -52,14 +52,14 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-base font-semibold text-text-primary uppercase tracking-widest">
+          <h3 className="text-base font-bold text-text-primary uppercase tracking-widest">
             Quick Links
           </h3>
-          <ul className="flex flex-col gap-3 text-sm text-text-secondary">
-            <li><a href="/meet-the-doctor" className="hover:text-primary-strong transition-colors">Meet the Doctor</a></li>
-            <li><a href="/contactUs" className="hover:text-primary-strong transition-colors">Contact</a></li>
-            <li><a href="/testimonials" className="hover:text-primary-strong transition-colors">Testimonials</a></li>
-            <li><a href="/patient-forms" className="hover:text-primary-strong transition-colors">Patient Forms</a></li>
+          <ul className="flex flex-col gap-3 text-sm text-text-primary">
+            <li><a href="/#" className="hover:text-text-secondary transition-colors">Meet the Doctor</a></li>
+            <li><a href="/contactUs" className="hover:text-text-secondary transition-colors">Contact</a></li>
+            <li><a href="/#testimonials" className="hover:text-text-secondary transition-colors">Testimonials</a></li>
+            <li><a href="/#getInTouch" className="hover:text-text-secondary transition-colors">Patient Forms</a></li>
           </ul>
         </div>
 

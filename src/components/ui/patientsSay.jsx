@@ -11,8 +11,8 @@ export default function Testimonial() {
             { quote: "From my first visit to delivery, the team was incredible. So grateful for their support and expertise.", name: "Priya M." },
           ].map(({ quote, name }) => (
             <div key={name} className="bg-surface rounded-xl p-6 border border-border text-left flex-1 hover:shadow-sm transition-shadow">
-              <p className="text-sm text-text-secondary leading-relaxed mb-4">"{quote}"</p>
-              <p className="text-sm font-semibold text-primary-strong">— {name}</p>
+              <p className="text-sm text-text-primary leading-relaxed mb-4">"{quote}"</p>
+              <p className="text-sm font-semibold text-text-secondary">— {name}</p>
             </div>
           ))}
         </div>

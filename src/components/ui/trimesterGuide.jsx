@@ -46,28 +46,28 @@ export default function TrimesterGuide() {
           <h2 className="text-4xl sm:text-5xl font-bold text-primary-strong mb-3">
             Trimester Guide
           </h2>
-          <p className="text-md sm:text-xl text-text-secondary">
+          <p className="text-md sm:text-xl text-text-primary font-semibold">
             A simple breakdown of what to expect at each stage of your pregnancy.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-8">
           {trimesters.map((t) => (
             <div key={t.number} className="bg-background rounded-2xl border border-border p-6 flex flex-col gap-4 hover:shadow-sm transition-shadow">
 
               <span className="text-5xl font-bold text-primary opacity-50">{t.number}</span>
 
               <div>
-                <h3 className="text-xl font-bold text-text-primary">
+                <h3 className="text-xl font-bold text-text-secondary">
                   {t.title}
                 </h3>
-                <p className="text-base text-primary font-medium mt-0.5">{t.weeks}</p>
+                <p className="text-base text-text-primary font-medium mt-0.5">{t.weeks}</p>
               </div>
 
               <ul className="flex flex-col gap-2">
                 {t.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-text-secondary">
-                    <span className="text-primary mt-0.5 shrink-0">✓</span>
+                  <li key={i} className="flex items-start gap-2 text-sm text-text-primary">
+                    <span className="mt-0.5 shrink-0">✓</span>
                     {point}
                   </li>
                 ))}

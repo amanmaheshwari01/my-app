@@ -8,19 +8,22 @@ import { useRouter } from "next/navigation";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const router= useRouter()
+  const router = useRouter();
 
-const handleContact = async () => {
-  console.log("this is")
-  router.push("#contact")
-}
+  const handleContact = async () => {
+    console.log("this is");
+    router.push("#contact");
+  };
+
   return (
-    <div className=" shadow-sm sticky top-0 z-50 border-b border-border">
-      <div className="flex items-center justify-between px-3 sm:px-5 md:px-8 lg:px-10 py-3 max-w-7xl mx-auto gap-4">
-
+    /* OUTER WRAPPER: Spans 100% of the screen */
+    <header className="w-full bg-background shadow-sm sticky top-0 z-50 border-b border-border">
+      
+      {/* INNER CONTAINER: Perfectly centered with max-w-7xl */}
+      <div className="flex items-center justify-between px-3 sm:px-5 md:px-8 lg:px-10 py-3 max-w-7xl mx-auto w-full gap-4">
         {/* Logo */}
         <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary leading-none shrink-0">
-          <Link href="/" className=" transition-colors hover:text-primary-strong">
+          <Link href="/" className="transition-colors hover:text-primary-strong">
             Clinic
           </Link>
         </h1>
@@ -84,7 +87,10 @@ const handleContact = async () => {
         </nav>
 
         {/* CTA Button */}
-        <button onClick={handleContact} className="hidden min-[540px]:block shrink-0 bg-primary hover:bg-primary-strong text-background px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap font-medium">
+        <button
+          onClick={handleContact}
+          className="hidden min-[540px]:block shrink-0 bg-primary hover:bg-primary-strong text-background px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap font-medium cursor-pointer"
+        >
           Book Appointment
         </button>
 
@@ -100,11 +106,12 @@ const handleContact = async () => {
 
       {/* Mobile Menu */}
       <div
-        className={`min-[540px]:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`min-[540px]:hidden overflow-hidden transition-all duration-300 ease-in-out w-full ${
           mobileOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col px-4 pb-5 gap-1 border-t border-border bg-surface">
+        {/* Added max-w-7xl mx-auto w-full here to align mobile links with the logo padding */}
+        <div className="flex flex-col px-4 pb-5 gap-1 border-t border-border bg-surface max-w-7xl mx-auto w-full">
           <Link
             href="/"
             className="pt-4 pb-2 text-base text-text-primary hover:text-primary transition-colors border-b border-border font-medium"
@@ -180,6 +187,6 @@ const handleContact = async () => {
           </button>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

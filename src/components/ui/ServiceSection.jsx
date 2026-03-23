@@ -9,7 +9,7 @@ const services = [
 
 export default function ServiceSection() {
   return (
-    <div className="mt-12 px-4 max-w-7xl m-auto">
+    <div className="mt-12 px-8 max-w-7xl m-auto">
 
       {/* Heading */}
       <div className="flex flex-col items-center gap-4 text-center">

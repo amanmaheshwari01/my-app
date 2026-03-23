@@ -24,10 +24,10 @@ export default function FAQ({ data }) {
       </div>
 
       {/* Two-column body */}
-      <div className="w-full max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      <div className="w-full max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16">
 
         {/* Left — Image */}
-        <div className="w-full md:w-1/2 flex justify-center items-center flex-shrink-0">
+        <div className="w-full md:w-1/2 flex justify-center items-center shrink-0">
           <div className="relative w-64 h-64 md:w-full md:h-auto rounded-3xl overflow-hidden shadow-md">
             <img
               src="/questionMark.webp"
@@ -59,13 +59,13 @@ export default function FAQ({ data }) {
                   >
                     <span
                       className={`text-sm font-semibold transition-colors ${
-                        isOpen ? "text-primary" : "text-text-primary"
+                        isOpen ? "text-text-secondary" : "text-text-primary"
                       }`}
                     >
                       {faq.q}
                     </span>
                     <span
-                      className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold transition-all duration-300 pb-1 ${
+                      className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold transition-all duration-300 pb-1 ${
                         isOpen
                           ? "bg-primary text-background rotate-45"
                           : "bg-surface text-primary group-hover:bg-primary group-hover:text-background"
@@ -80,7 +80,7 @@ export default function FAQ({ data }) {
                       isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <p className="px-5 pb-5 text-sm text-text-secondary leading-relaxed border-t border-border pt-3">
+                    <p className="px-5 pb-5 text-sm text-text-primary leading-relaxed border-t border-border pt-3">
                       {faq.a}
                     </p>
                   </div>

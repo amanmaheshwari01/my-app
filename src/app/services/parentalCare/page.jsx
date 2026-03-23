@@ -48,7 +48,7 @@ export default function Page() {
           imageSrc="/parental-care.jpg"
         />
       <TrimesterGuide />
-      <div className="my-10 lg:my-25">
+      <div className="my-10 lg:my-20">
       <Carousel slides={slideData} /></div>
       <FAQ data = {faqs} />
     </div>

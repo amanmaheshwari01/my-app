@@ -1,4 +1,4 @@
-import { Baby, Heart, Stethoscope, Clock, ShieldCheck } from "lucide-react";
+import { Baby, Heart, Stethoscope, Clock, ShieldCheck, ClipboardList } from "lucide-react";
 
 const services = [
   { icon: Baby, title: "Prenatal Visits", desc: "Regular check-ups to monitor your baby's growth and your health throughout pregnancy." },
@@ -6,12 +6,13 @@ const services = [
   { icon: Stethoscope, title: "Ultrasounds", desc: "In-office ultrasounds to track your baby's development at every stage." },
   { icon: Clock, title: "Same Day Appointments", desc: "We understand urgency — same day visits available for pregnancy concerns." },
   { icon: ShieldCheck, title: "Postpartum Care", desc: "Support and follow-up care for mothers after delivery to ensure full recovery." },
+  { icon: ClipboardList, title: "Labor & Delivery Planning", desc: "Personalized birth plans and preparation guidance to help you feel confident and ready for delivery." }
 ];
 
 export default function WhatWeOffer() {
   return (
     <div className="w-full py-14 px-4 bg-background">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-primary-strong text-center mb-10">
           What We Offer
         </h2>
@@ -19,8 +20,8 @@ export default function WhatWeOffer() {
           {services.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="bg-surface rounded-xl p-6 flex flex-col gap-3 border border-border hover:shadow-sm transition-shadow">
               <Icon size={32} className="text-primary" />
-              <h3 className="font-semibold text-text-primary text-lg">{title}</h3>
-              <p className="text-sm text-text-secondary leading-relaxed">{desc}</p>
+              <h3 className="font-semibold text-text-secondary text-lg">{title}</h3>
+              <p className="text-sm text-text-primary leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>
