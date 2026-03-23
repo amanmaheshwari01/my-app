@@ -11,7 +11,14 @@ export default function Philosophy({ index, data }) {
         {data?.title || "Our Philosophy"}
       </h1>
       <p className="text-base sm:text-[16px] leading-relaxed text-text-secondary">
-        {data?.description || `We believe that every stage of a woman's life deserves specialized...`}
+        {data?.description || `We believe that every stage of a woman's life deserves specialized
+        , compassionate care. From adolescence through menopause and beyond, our dedicated team 
+        of experienced gynecologists and healthcare professionals is here to support your health 
+        journey every step of the way. At Sunshine State Women's Care, we understand that women's 
+        health is not one-size-fits-all. That's why we take the time to listen, understand your 
+        unique needs, and create personalized care plans tailored just for you. Whether you're 
+        seeking routine wellness exams, prenatal care, fertility support, or managing a complex 
+        condition — we are your trusted partner in health.`}
       </p>
     </div>
   );

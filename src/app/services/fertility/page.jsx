@@ -14,31 +14,54 @@ const faqs = [
   ];
 
 export default function Page() {
-  const gynecologyServices = [
+ const gynecologyServices = [
   {
     title: "Parental Care",
     description:
-      "Comprehensive care during pregnancy including regular checkups, fetal monitoring, nutritional guidance, and emotional support to ensure a healthy journey for both mother and baby.",
+      `Comprehensive care during pregnancy including regular checkups, fetal monitoring,
+      nutritional guidance, and emotional support to ensure a healthy journey for both mother
+      and baby. Our experienced team of obstetricians and midwives work closely with you 
+      throughout every trimester, tracking your baby's development and addressing any concerns 
+      with prompt, expert attention. From your first prenatal visit to postpartum recovery, 
+      we are committed to making your pregnancy experience as safe, informed, and empowering 
+      as possible.`,
     image: "https://images.unsplash.com/photo-1584515933487-779824d29309"
   },
   {
     title: "Menstrual Disorders",
     description:
-      "Diagnosis and treatment of irregular periods, heavy bleeding, painful cramps, and hormonal imbalances using personalized medical approaches.",
+      `Diagnosis and treatment of irregular periods, heavy bleeding, painful cramps, and 
+      hormonal imbalances using personalized medical approaches. We conduct thorough 
+      evaluations to identify the root cause of your symptoms, whether it's PCOS, 
+      endometriosis, fibroids, or thyroid-related conditions. Our team then designs a 
+      targeted treatment plan — which may include medication, hormonal therapy, or minimally 
+      invasive procedures — to restore balance and significantly improve your quality of life.`,
     image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12"
   },
-{
-  title: "Menopause Care",
-  description:
-    "Supportive care for women during menopause with symptom management, hormonal treatments, and lifestyle advice to maintain overall well-being.",
-  image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2"
-},
-{
-  title: "Gynecological Checkups",
-  description:
-    "Routine examinations and screenings to detect issues early, maintain reproductive health, and provide preventive care tailored to every stage of life.",
-  image: "https://images.unsplash.com/photo-1579154204601-01588f351e67"
-}
+  {
+    title: "Menopause Care",
+    description:
+      `Supportive care for women during menopause with symptom management, 
+      hormonal treatments, and lifestyle advice to maintain overall well-being. 
+      We understand that menopause affects every woman differently, which is why 
+      our approach is fully individualized — addressing hot flashes, mood changes, 
+      sleep disturbances, and bone health with evidence-based therapies. Our 
+      compassionate team walks alongside you during this transition, helping you 
+      feel confident, informed, and in control of your health.`,
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2"
+  },
+  {
+    title: "Gynecological Checkups",
+    description:
+      `Routine examinations and screenings to detect issues early, maintain 
+      reproductive health, and provide preventive care tailored to every stage 
+      of life. Our comprehensive checkups include pelvic exams, Pap smears, breast 
+      examinations, STI screenings, and HPV testing to give you a complete 
+      picture of your health. We believe that prevention is the foundation of 
+      lasting wellness, and our team takes the time to educate and empower 
+      you with the knowledge you need to make confident health decisions.`,
+    image: "https://images.unsplash.com/photo-1579154204601-01588f351e67"
+  }
 ];
 
 const features =  [

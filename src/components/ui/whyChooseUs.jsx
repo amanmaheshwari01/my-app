@@ -29,7 +29,7 @@ export default function WhyChooseUs({ data }) {
                 {item.title}
               </h3>
 
-              <p className="text-text-primary text-sm leading-relaxed">
+              <p className="text-text-primary text-base leading-relaxed">
                 {item.desc}
               </p>
             </div>

@@ -11,7 +11,7 @@ export default function MeetDoctor() {
           Board-Certified OB/GYN with Over 20 Years of Experience
         </h2>
 
-        <p className="text-sm sm:text-base text-text-secondary/50 leading-relaxed mt-2">
+        <p className="text-sm sm:text-base text-text-primary leading-relaxed mt-2">
           Dr. Zann has been serving women in the Boca Raton community for over
           two decades. She completed her residency at a top-ranked program and
           is board-certified in Obstetrics and Gynecology. Her approach combines

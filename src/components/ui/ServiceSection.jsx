@@ -31,7 +31,7 @@ export default function ServiceSection() {
           >
             <Icon className="text-primary" size={52} />
             <p className="text-base md:text-lg font-medium text-center text-text-secondary">{title}</p>
-            <p className="text-center text-text-primary text-sm">{desc}</p>
+            <p className="text-center text-text-primary text-base">{desc}</p>
           </div>
         ))}
       </div>

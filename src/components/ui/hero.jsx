@@ -28,12 +28,12 @@ export default function HeroSection() {
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-playfair text-text-primary font-semibold">
             Providing an Excellent Experience
           </h2>
-          <p className="sm:text-lg text-text-primary leading-relaxed max-w-lg">
+          <p className="sm:text-base text-text-primary leading-relaxed max-w-lg">
             Sunshine State Women's Care is committed to providing the highest
             quality care to all our patients. Our friendly, compassionate staff
             ensures comfort and quality care at every visit.
           </p>
-            <Link href="/services/parentalCare"
+            <Link href="/services/pregnancy-care"
             className="inline-flex items-center gap-2  hover:bg-secondary/20 px-6 py-3 rounded-lg border-2 border-saddle-brown font-playfair font-semibold hover:text-terracotta-accent hover:border-terracotta-accent hover:-translate-y-0.5 hover:shadow-md hover:gap-4 transition-all duration-200 text-sm sm:text-base"
           >
             Explore our services
