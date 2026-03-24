@@ -71,7 +71,7 @@ export default function Page() {
       treatment options, set realistic expectations, and manage stress and anxiety. With 
       a compassionate approach, our team ensures you feel informed, confident, and supported 
       at every stage of your fertility care experience.`,
-    image: "/fertilityServicecounselling.jpg"
+    image: "/fertilityServiceCounselling.jpg"
   }
 ];
 
