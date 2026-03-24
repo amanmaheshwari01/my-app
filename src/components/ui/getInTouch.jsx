@@ -17,7 +17,7 @@ export default function GetInTouch() {
   };
 
   return (
-    <section id="contact" className="w-full py-14 px-8">
+    <section id="getInTouch" className="w-full py-14 px-8">
       <div className="max-w-7xl mx-auto px-8">
 
         {/* Heading */}

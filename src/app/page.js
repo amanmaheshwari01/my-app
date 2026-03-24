@@ -5,6 +5,7 @@ import { Clock, HeartCrackIcon, Scissors, ShieldAlertIcon, SmilePlus, Stethoscop
 import GetInTouch from "@/components/ui/getInTouch";
 import HomeHero from "@/components/ui/homeHero";
 import FAQ from "@/components/ui/faq";
+import ScrollToHash from "@/components/ui/scrollToHash";
 export default function Home() {
   
 const features =  [
@@ -73,10 +74,20 @@ const faqs = [
     a: "Of course. You are always welcome to bring a trusted friend or family member for support. Your comfort is our priority.",
   },
 ];
+
   return (
     <div>
       <HomeHero />
-      <MeetDoctor /> 
+      <ScrollToHash />
+      <MeetDoctor
+        name="Meet Dr. Pratishtha"
+        title="Board-Certified OB/GYN with Over 20 Years of Experience"
+        description="Dr. Pratishtha has been serving women in Jaipur for over two decades, combining advanced medical care with a warm, patient-first approach."
+        imageSrc="/Dr.Pratishtha.jpg"
+        imageAlt="Dr. Pratishtha"
+        buttonLabel="Learn More About Dr. Pratishtha"
+        buttonHref="/about"
+      />
       <WhyChooseUs fontClass = "text-lg" data = {experience} />
       <GetInTouch />
       <TestimonialSlider />

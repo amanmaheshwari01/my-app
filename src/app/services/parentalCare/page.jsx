@@ -42,10 +42,11 @@ const faqs = [
 export default function Page() {
   return (
     <div>
+
         <ServiceHero
           title="Parental Care"
           subtitle="From your newborn's first days to every milestone ahead, we provide dedicated medical support, nurturing guidance, and expert advice to help you raise a healthy and happy child with confidence."
-          imageSrc="/parental-care.jpg"
+          imageSrc="/parentalCare.jpg"
         />
       <TrimesterGuide />
       <div className="my-10 lg:my-20">

@@ -31,7 +31,7 @@ export default function Philosophy({ index, data }) {
     >
       <img
         className="w-full h-full object-cover rounded-3xl"
-        src={data?.image || `/gynec.jpg`}
+        src={data?.image || `/aboutPhilosophy.webp`}
         alt={data?.title || "Our Philosophy"}
       />
     </div>

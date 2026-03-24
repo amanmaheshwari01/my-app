@@ -38,14 +38,14 @@ export default function TestimonialsSlider() {
   const total = testimonials.length;
 
   const goTo = (index, dir) => {
-    if (animating) return;
-    setDirection(dir);
-    setAnimating(true);
-    setTimeout(() => {
-      setCurrent(index);
-      setAnimating(false);
-    }, 350);
-  };
+  if (animating) return;
+  setDirection(dir);
+  setCurrent(index);    
+  setAnimating(true); 
+  setTimeout(() => {
+    setAnimating(false);
+  }, 350);
+};
 
   const prev = () => goTo((current - 1 + total) % total, "left");
   const next = () => goTo((current + 1) % total, "right");
@@ -82,7 +82,7 @@ export default function TestimonialsSlider() {
         .slide-left  { animation: fadeInLeft  0.35s ease forwards; }
       `}</style>
 
-      <section className="w-full py-20 bg-surface">
+      <section className="w-full py-20 bg-surface" id = "testimonials">
         <div className="max-w-7xl mx-auto px-8">
 
           {/* Header */}
@@ -135,7 +135,7 @@ export default function TestimonialsSlider() {
             {/* Right Arrow */}
             <button
               onClick={handleNext}
-              className="flex-shrink-0 w-11 h-11 rounded-full border border-border bg-background flex items-center justify-center text-text-primary hover:bg-primary hover:text-background hover:border-primary transition-all duration-200"
+              className="shrink-0 w-11 h-11 rounded-full border border-border bg-background flex items-center justify-center text-text-primary hover:bg-primary hover:text-background hover:border-primary transition-all duration-200"
             >
               <ChevronRight size={20} />
             </button>

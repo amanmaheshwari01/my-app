@@ -74,6 +74,13 @@ export default function Navbar() {
                 >
                   Parental Care
                 </Link>
+                <Link
+                  href="/services/menstrual-hormonal-issues"
+                  className="px-3 py-2 rounded-md text-text-secondary hover:bg-secondary/10 hover:text-text-primary text-xs sm:text-sm transition-colors"
+                >
+                  Menstrual and Hormonal Issues
+                </Link>
+                
               </div>
             </div>
           </div>

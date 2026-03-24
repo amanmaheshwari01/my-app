@@ -1,4 +1,5 @@
 import { Globe, MessageCircle, Pin } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -56,10 +57,10 @@ export default function Footer() {
             Quick Links
           </h3>
           <ul className="flex flex-col gap-3 text-sm text-text-primary">
-            <li><a href="/#" className="hover:text-text-secondary transition-colors">Meet the Doctor</a></li>
+            <li><a href="/about" className="hover:text-text-secondary transition-colors">About the Doctor</a></li>
             <li><a href="/contactUs" className="hover:text-text-secondary transition-colors">Contact</a></li>
             <li><a href="/#testimonials" className="hover:text-text-secondary transition-colors">Testimonials</a></li>
-            <li><a href="/#getInTouch" className="hover:text-text-secondary transition-colors">Patient Forms</a></li>
+            <li><a href="/#getInTouch" className="hover:text-text-secondary transition-colors">Get In Touch </a></li>
           </ul>
         </div>
 

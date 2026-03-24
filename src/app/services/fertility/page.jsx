@@ -1,6 +1,5 @@
 import GetInTouch from "@/components/ui/getInTouch";
 import Philosophy from "@/components/ui/philosophy";
-import WhyChooseUs from "@/components/ui/whyChooseUs";
 import { HeartCrack, Shield, StethoscopeIcon, UserRoundCheck } from "lucide-react";
 import ServiceHero from "@/components/ui/serviceHero";
 import FAQ from "@/components/ui/faq";
@@ -14,53 +13,65 @@ const faqs = [
   ];
 
 export default function Page() {
- const gynecologyServices = [
+
+ const fertilityServices = [
   {
-    title: "Parental Care",
+    title: "IVF Treatment",
     description:
-      `Comprehensive care during pregnancy including regular checkups, fetal monitoring,
-      nutritional guidance, and emotional support to ensure a healthy journey for both mother
-      and baby. Our experienced team of obstetricians and midwives work closely with you 
-      throughout every trimester, tracking your baby's development and addressing any concerns 
-      with prompt, expert attention. From your first prenatal visit to postpartum recovery, 
-      we are committed to making your pregnancy experience as safe, informed, and empowering 
-      as possible.`,
-    image: "https://images.unsplash.com/photo-1584515933487-779824d29309"
+      `In Vitro Fertilization (IVF) is an advanced fertility treatment where eggs and sperm 
+      are combined outside the body in a controlled laboratory environment. The resulting 
+      embryos are carefully monitored and the healthiest one is transferred into the uterus 
+      to achieve pregnancy. Our clinic uses state-of-the-art technology, precise embryo 
+      grading, and individualized stimulation protocols to improve success rates. From 
+      ovarian stimulation and egg retrieval to embryo transfer and post-procedure care, we 
+      guide you at every step with complete transparency, safety, and emotional support.`,
+    image: "/fertilityServiceIvfTreatment.jpg"
   },
   {
-    title: "Menstrual Disorders",
+    title: "Infertility Evaluation",
     description:
-      `Diagnosis and treatment of irregular periods, heavy bleeding, painful cramps, and 
-      hormonal imbalances using personalized medical approaches. We conduct thorough 
-      evaluations to identify the root cause of your symptoms, whether it's PCOS, 
-      endometriosis, fibroids, or thyroid-related conditions. Our team then designs a 
-      targeted treatment plan — which may include medication, hormonal therapy, or minimally 
-      invasive procedures — to restore balance and significantly improve your quality of life.`,
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12"
+      `A detailed fertility assessment is the first step toward successful treatment. 
+      We conduct comprehensive evaluations for both partners, including hormonal profiling, 
+      ultrasound imaging, ovulation tracking, semen analysis, and other diagnostic tests 
+      to identify the root cause of infertility. Whether the issue is related to ovulation 
+      disorders, fallopian tube blockage, low sperm count, or unexplained infertility, 
+      our specialists design a personalized treatment plan that addresses your specific 
+      condition and maximizes your chances of conception.`,
+    image: "/fertilityServiceInfertilityEvaluation.jpeg"
   },
   {
-    title: "Menopause Care",
+    title: "IUI Treatment",
     description:
-      `Supportive care for women during menopause with symptom management, 
-      hormonal treatments, and lifestyle advice to maintain overall well-being. 
-      We understand that menopause affects every woman differently, which is why 
-      our approach is fully individualized — addressing hot flashes, mood changes, 
-      sleep disturbances, and bone health with evidence-based therapies. Our 
-      compassionate team walks alongside you during this transition, helping you 
-      feel confident, informed, and in control of your health.`,
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2"
+      `Intrauterine Insemination (IUI) is a simple and minimally invasive fertility 
+      procedure recommended for couples with mild infertility issues. During this process, 
+      specially prepared and concentrated sperm is directly placed into the uterus around 
+      the time of ovulation, increasing the chances of fertilization. The procedure is 
+      quick, relatively painless, and cost-effective compared to IVF. Our team carefully 
+      monitors your cycle and timing to ensure optimal results while providing a comfortable 
+      and stress-free experience.`,
+    image: "/fertilityServiceIuiTreatment.jpeg"
   },
   {
-    title: "Gynecological Checkups",
+    title: "Ovulation Induction",
     description:
-      `Routine examinations and screenings to detect issues early, maintain 
-      reproductive health, and provide preventive care tailored to every stage 
-      of life. Our comprehensive checkups include pelvic exams, Pap smears, breast 
-      examinations, STI screenings, and HPV testing to give you a complete 
-      picture of your health. We believe that prevention is the foundation of 
-      lasting wellness, and our team takes the time to educate and empower 
-      you with the knowledge you need to make confident health decisions.`,
-    image: "https://images.unsplash.com/photo-1579154204601-01588f351e67"
+      `Ovulation induction is a treatment used for women who experience irregular ovulation 
+      or do not ovulate regularly. Through carefully prescribed medications and continuous 
+      monitoring using ultrasound and hormonal tests, we stimulate the ovaries to produce 
+      and release healthy eggs. This treatment can be used alone or in combination with 
+      procedures like IUI to enhance success rates. Our approach focuses on achieving 
+      effective results while minimizing risks and ensuring hormonal balance.`,
+    image: "/fertilityServiceOvulationInduction.jpg"
+  },
+  {
+    title: "Fertility Counselling & Support",
+    description:
+      `Fertility challenges can be emotionally overwhelming, and we believe that support is 
+      just as important as medical treatment. Our fertility counseling services provide 
+      guidance, clarity, and reassurance throughout your journey. We help you understand 
+      treatment options, set realistic expectations, and manage stress and anxiety. With 
+      a compassionate approach, our team ensures you feel informed, confident, and supported 
+      at every stage of your fertility care experience.`,
+    image: "/fertilityServicecounselling.jpg"
   }
 ];
 
@@ -95,16 +106,11 @@ const features =  [
       imageSrc="/fertility-care.jpg"
     />
     <div>
-      {gynecologyServices.slice(0,2).map((data, index) => (
+      {fertilityServices.map((data, index) => (
         <Philosophy key={index} data={data} index={index} />
       ))}
     </div>
-    <WhyChooseUs  data = {features} />
-    <div>
-      {gynecologyServices.slice(2,8).map((data, index) => (
-        <Philosophy key={index} data={data} index={index} />
-      ))}
-    </div>
+    
     <GetInTouch />
     <FAQ data = {faqs} />
     </>
