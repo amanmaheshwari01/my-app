@@ -1,8 +1,8 @@
 "use client";
 
-import { Calendar, Droplet, Activity, Clock, HeartPulse, AlertCircle, Brain, Thermometer, Moon, Wind, Zap, Scale } from "lucide-react";
+import { Baby, Stethoscope, Calendar, Droplet, Activity, Clock, HeartPulse, AlertCircle, Brain, Thermometer, Moon, Wind, Zap, Scale } from "lucide-react";
 
-const iconMap = { Calendar, Droplet, Activity, Clock, HeartPulse, AlertCircle, Brain, Thermometer, Moon, Wind, Zap, Scale };
+const iconMap = {  Calendar, Droplet, Activity, Clock, HeartPulse, AlertCircle, Brain, Thermometer, Moon, Wind, Zap, Scale };
 
 export default function IssuesSection({ eyebrow, heading, subtext, issues }) {
   return (

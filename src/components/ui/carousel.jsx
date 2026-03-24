@@ -112,6 +112,7 @@ const Slide = ({ slide, index, current, handleSlideClick }) => {
 
 const Arrow = ({ direction, onClick, disabled }) => (
   <button
+    suppressHydrationWarning
     onClick={onClick}
     disabled={disabled}
     aria-label={direction === "prev" ? "Previous slide" : "Next slide"}

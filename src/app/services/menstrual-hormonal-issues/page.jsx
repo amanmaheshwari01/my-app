@@ -1,9 +1,6 @@
-"use client";
-
 import DiagnosisProcess from "@/components/ui/diagonoseSection";
 import FAQ from "@/components/ui/faq";
 import IssuesSection from "@/components/ui/menstrualIssues";
-import MenstrualIssues from "@/components/ui/menstrualIssues";
 import ServiceHero from "@/components/ui/serviceHero";
 
 const faqs = [

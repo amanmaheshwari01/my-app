@@ -2,7 +2,7 @@ import AboutUsHero from "@/components/ui/aboutUsHero";
 import { Achievements } from "@/components/ui/drAchievements";
 import { Certificates } from "@/components/ui/drCertification";
 import Experience from "@/components/ui/experience";
-import GetInTouch from "@/components/ui/getInTouch";
+import GetInTouch from "@/components/ui/BookAppointment";
 import MeetDoctor from "@/components/ui/meetDoctor";
 import Philosophy from "@/components/ui/philosophy";
 
@@ -15,8 +15,8 @@ export default function About() {
         name="Meet Dr. Pratishtha"
         title="Board-Certified OB/GYN with Over 20 Years of Experience"
         description="Dr. Pratishtha completed her M.S. in Obstetrics & Gynaecology from SMS Hospital, Jaipur, followed by an advanced fellowship in Reproductive Medicine. With over 10,000 patients treated and a 99% satisfaction rate, she specialises in high-risk pregnancies, infertility, laparoscopic surgery, and adolescent gynaecology — always delivering care that is thorough, honest, and deeply personal."
-        imageSrc="/Dr.Pratishtha.jpg"
-        imageAlt="Dr. Pratishtha"
+        imageSrc="/DrVaishaliSharma.jpg"
+        imageAlt="Dr. Vaishali Sharma"
         tags={["High-Risk Pregnancy", "Infertility & IVF", "Laparoscopic Surgery", "PCOS", "Menopause Care", "Adolescent Gynaecology"]}
       />    
       <Achievements items={[

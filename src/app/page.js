@@ -2,7 +2,7 @@ import TestimonialSlider from "@/components/ui/testimonialSlider.jsx";
 import WhyChooseUs from "@/components/ui/whyChooseUs";
 import MeetDoctor from "@/components/ui/meetDoctor";
 import { Clock, HeartCrackIcon, Scissors, ShieldAlertIcon, SmilePlus, StethoscopeIcon, UserRoundCheckIcon, Users } from "lucide-react";
-import GetInTouch from "@/components/ui/getInTouch";
+import GetInTouch from "@/components/ui/BookAppointment";
 import HomeHero from "@/components/ui/homeHero";
 import FAQ from "@/components/ui/faq";
 import ScrollToHash from "@/components/ui/scrollToHash";
@@ -83,13 +83,15 @@ const faqs = [
         name="Meet Dr. Pratishtha"
         title="Board-Certified OB/GYN with Over 20 Years of Experience"
         description="Dr. Pratishtha has been serving women in Jaipur for over two decades, combining advanced medical care with a warm, patient-first approach."
-        imageSrc="/Dr.Pratishtha.jpg"
-        imageAlt="Dr. Pratishtha"
+        imageSrc="/DrVaishaliSharma.jpg"
+        imageAlt="Dr. Vaishali Sharma"
         buttonLabel="Learn More About Dr. Pratishtha"
         buttonHref="/about"
       />
       <WhyChooseUs fontClass = "text-lg" data = {experience} />
-      <GetInTouch />
+      <section id = "get">
+       <GetInTouch />
+      </section>
       <TestimonialSlider />
       <FAQ data = {faqs} />
     </div>

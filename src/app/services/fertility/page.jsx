@@ -1,4 +1,4 @@
-import GetInTouch from "@/components/ui/getInTouch";
+import GetInTouch from "@/components/ui/BookAppointment";
 import Philosophy from "@/components/ui/philosophy";
 import { HeartCrack, Shield, StethoscopeIcon, UserRoundCheck } from "lucide-react";
 import ServiceHero from "@/components/ui/serviceHero";

@@ -10,11 +10,6 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const router = useRouter();
 
-  const handleContact = async () => {
-    console.log("this is");
-    router.push("#contact");
-  };
-
   return (
     /* OUTER WRAPPER: Spans 100% of the screen */
     <header className="w-full bg-background shadow-sm sticky top-0 z-50 border-b border-border">
@@ -57,7 +52,7 @@ export default function Navbar() {
             <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-44 bg-background shadow-md rounded-xl border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div className="flex flex-col p-2 gap-1">
                 <Link
-                  href="/services/pregnancy-care"
+                  href="/services/pregnancyCare"
                   className="px-3 py-2 rounded-md text-text-secondary hover:bg-secondary/10 hover:text-text-primary text-xs sm:text-sm transition-colors"
                 >
                   Pregnancy Care
@@ -69,10 +64,10 @@ export default function Navbar() {
                   Fertility
                 </Link>
                 <Link
-                  href="/services/parentalCare"
+                  href="/services/prenatalCare"
                   className="px-3 py-2 rounded-md text-text-secondary hover:bg-secondary/10 hover:text-text-primary text-xs sm:text-sm transition-colors"
                 >
-                  Parental Care
+                  Prenatal Care
                 </Link>
                 <Link
                   href="/services/menstrual-hormonal-issues"
@@ -94,15 +89,16 @@ export default function Navbar() {
         </nav>
 
         {/* CTA Button */}
-        <button
-          onClick={handleContact}
+        <a href = "/#get">
+        <button 
           className="hidden min-[540px]:block shrink-0 bg-primary hover:bg-primary-strong text-background px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap font-medium cursor-pointer"
         >
           Book Appointment
         </button>
+        </a>
 
         {/* Hamburger */}
-        <button
+        <button 
           className="min-[540px]:hidden text-primary-strong p-1 shrink-0"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
@@ -157,7 +153,7 @@ export default function Navbar() {
             >
               <div className="flex flex-col gap-1 pl-4 border-l-2 border-primary ml-1">
                 <Link
-                  href="/services/pregnancy-care"
+                  href="/services/pregnancyCare"
                   className="py-1.5 text-sm text-text-secondary hover:text-primary-strong transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
@@ -171,11 +167,11 @@ export default function Navbar() {
                   Fertility
                 </Link>
                 <Link
-                  href="/services/parentalCare"
+                  href="/services/prenatalCare"
                   className="py-1.5 text-sm text-text-secondary hover:text-primary-strong transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Parental Care
+                  Prenatal Care
                 </Link>
               </div>
             </div>
