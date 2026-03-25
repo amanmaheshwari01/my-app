@@ -12,8 +12,8 @@ export default function About() {
   return (
     <div>
       <ServiceHero
-        title="Personalized Women’s Health Care"
-        subtitle="Comprehensive, compassionate care for every stage of a woman’s life — from menstrual health to pregnancy and beyond."
+        title="About Us"
+        subtitle=""
         imageSrc="/aboutHero.jpg"
       />
       <MeetDoctor
