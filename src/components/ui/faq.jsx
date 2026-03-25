@@ -5,7 +5,7 @@ export default function FAQ({ data }) {
   const [open, setOpen] = useState(null);
 
   return (
-    <section className="w-full flex flex-col items-center justify-center bg-surface py-14">
+    <section className="w-full flex flex-col items-center justify-center py-14">
 
       {/* Heading */}
       <div className="w-full max-w-7xl mx-auto px-4 text-center mb-10">
