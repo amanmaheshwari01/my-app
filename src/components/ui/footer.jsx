@@ -1,4 +1,4 @@
-import { Globe, MessageCircle, Pin } from "lucide-react";
+import { Facebook, Pin, Star } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -18,10 +18,10 @@ export default function Footer() {
           </p>
           <div className="flex gap-4 mt-2">
             <a href="https://www.facebook.com/SunshineStateWomensCareLLC/" target="_blank">
-              <Globe className="text-primary hover:text-primary-strong transition-colors" size={20} />
+              <Facebook className="text-primary hover:text-primary-strong transition-colors" size={20} />
             </a>
-            <a href="https://businessreviewcentral.com/sunshine-state-womens-care-llc/" target="_blank">
-              <MessageCircle className="text-primary hover:text-primary-strong transition-colors" size={20} />
+            <a href="https://www.google.com/search?q=Sunshine+State+Women's+Care+LLC+reviews" target="_blank">
+              <Star className="text-primary hover:text-primary-strong transition-colors" size={20} />
             </a>
             <a href="https://www.google.com/maps/place/Sunshine+State+Women's+Care,+LLC/" target="_blank">
               <Pin className="text-primary hover:text-primary-strong transition-colors" size={20} />

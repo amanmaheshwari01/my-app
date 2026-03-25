@@ -5,12 +5,17 @@ import Experience from "@/components/ui/experience";
 import GetInTouch from "@/components/ui/BookAppointment";
 import MeetDoctor from "@/components/ui/meetDoctor";
 import Philosophy from "@/components/ui/philosophy";
+import ServiceHero from "@/components/ui/serviceHero";
 
 
 export default function About() {
   return (
     <div>
-      <AboutUsHero />
+      <ServiceHero
+        title="Personalized Women’s Health Care"
+        subtitle="Comprehensive, compassionate care for every stage of a woman’s life — from menstrual health to pregnancy and beyond."
+        imageSrc="/aboutHero.jpg"
+      />
       <MeetDoctor
         name="Meet Dr. Pratishtha"
         title="Board-Certified OB/GYN with Over 20 Years of Experience"

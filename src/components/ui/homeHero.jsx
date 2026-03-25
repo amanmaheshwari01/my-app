@@ -81,10 +81,10 @@ export default function HeroCarousel() {
       {/* Title */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <h1
-          className="text-white text-4xl sm:text-5xl lg:text-6xl font-playfair font-semibold tracking-wide text-center px-4"
+          className="text-white text-4xl sm:text-6xl lg:text-6xl font-playfair font-semibold tracking-wide text-center px-4"
           style={{ textShadow: "0 2px 20px rgba(0,0,0,0.4)" }}
         >
-          Dedicated to Women's Health & Wellness
+          Dedicated to Women's <br />Health & Wellness
         </h1>
       </div>
 
