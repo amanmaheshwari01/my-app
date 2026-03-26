@@ -1,6 +1,4 @@
-import { UserRound, Stethoscope, Heart, Shield } from "lucide-react";
-
-export default function WhyChooseUs({ data , fontClass }) {
+export default function WhyChooseUs({ data , fontClass, contactLinks }) {
   return (
     <section className="w-full py-20">
       <div className="max-w-7xl mx-auto px-8">

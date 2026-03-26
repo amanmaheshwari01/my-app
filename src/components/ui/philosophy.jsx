@@ -10,7 +10,7 @@ export default function Philosophy({ index, data }) {
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl wrap-break-word text-primary-strong leading-snug">
         {data?.title || "Our Philosophy"}
       </h1>
-      <p className="text-base sm:text-[16px] leading-relaxed text-text-secondary">
+      <p className="text-base sm:text-[16px] leading-relaxed text-text-primary">
         {data?.description || `We believe that every stage of a woman's life deserves specialized
         , compassionate care. From adolescence through menopause and beyond, our dedicated team 
         of experienced gynecologists and healthcare professionals is here to support your health 

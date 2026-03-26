@@ -2,7 +2,7 @@ import AboutUsHero from "@/components/ui/aboutUsHero";
 import { Achievements } from "@/components/ui/drAchievements";
 import { Certificates } from "@/components/ui/drCertification";
 import Experience from "@/components/ui/experience";
-import GetInTouch from "@/components/ui/BookAppointment";
+import GetInTouch from "@/components/ui/GetInTouch";
 import MeetDoctor from "@/components/ui/meetDoctor";
 import Philosophy from "@/components/ui/philosophy";
 import ServiceHero from "@/components/ui/serviceHero";

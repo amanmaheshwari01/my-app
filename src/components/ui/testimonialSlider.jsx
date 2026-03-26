@@ -101,7 +101,7 @@ export default function TestimonialsSlider() {
             {/* Left Arrow */}
             <button
               onClick={handlePrev}
-              className="flex-shrink-0 w-11 h-11 rounded-full border border-border bg-background flex items-center justify-center text-text-primary hover:bg-primary hover:text-background hover:border-primary transition-all duration-200"
+              className="shrink-0 w-11 h-11 rounded-full border border-border bg-background flex items-center justify-center text-text-primary hover:bg-primary hover:text-background hover:border-primary transition-all duration-200"
             >
               <ChevronLeft size={20} />
             </button>
@@ -110,14 +110,14 @@ export default function TestimonialsSlider() {
             <div className="flex-1 overflow-hidden">
               <div
                 key={current}
-                className={`bg-background border border-border rounded-2xl p-8 sm:p-12 text-center
+                className={`bg-background border border-border rounded-2xl p-10 sm:p-12 sm:text-center
                   ${animating ? (direction === "right" ? "slide-right" : "slide-left") : ""}`}
               >
                 <span className="text-5xl leading-none text-primary font-serif select-none block mb-4">
                   "
                 </span>
 
-                <p className="text-base sm:text-lg text-text-primary leading-relaxed mb-8 max-w-3xl mx-auto">
+                <p className="text-xs sm:text-base text-text-primary leading-relaxed mb-8 max-w-3xl mx-auto">
                   {t.text}
                 </p>
 

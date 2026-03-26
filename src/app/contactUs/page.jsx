@@ -1,6 +1,5 @@
 import FAQ from "@/components/ui/faq";
-import Form from "@/components/ui/ContactUs";
-import ContactUs from "@/components/ui/ContactUs";
+import BookAppointment from "@/components/ui/BookAppointment";
 
 const faqs = [
   { q: "How often should I see a gynecologist?", a: "Once a year for a routine check-up is recommended for most women." },
@@ -13,8 +12,8 @@ const faqs = [
 export default function Contact() {
   return (
     <div>
-      <ContactUs />
+      <BookAppointment />
       <FAQ data = {faqs} />
-    </div>
+    </div> 
   )
 }

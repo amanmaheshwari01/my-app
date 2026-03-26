@@ -2,10 +2,11 @@ import TestimonialSlider from "@/components/ui/testimonialSlider.jsx";
 import WhyChooseUs from "@/components/ui/whyChooseUs";
 import MeetDoctor from "@/components/ui/meetDoctor";
 import { Clock, HeartCrackIcon, Scissors, ShieldAlertIcon, SmilePlus, StethoscopeIcon, UserRoundCheckIcon, Users } from "lucide-react";
-import GetInTouch from "@/components/ui/BookAppointment";
+import GetInTouch from "@/components/ui/GetInTouch";
 import HomeHero from "@/components/ui/homeHero";
 import FAQ from "@/components/ui/faq";
 import ScrollToHash from "@/components/ui/scrollToHash";
+import WorkingHours from "@/components/ui/workingHours";
 export default function Home() {
   
 const features =  [
@@ -30,6 +31,7 @@ const features =  [
       icon: <ShieldAlertIcon size={40} />,
     },
   ];
+
   const experience = [
   {
     icon: <Clock size={56} />,
@@ -89,6 +91,7 @@ const faqs = [
         buttonHref="/about"
       />
       <WhyChooseUs fontClass = "text-lg" data = {experience} />
+      <WorkingHours />
       <section id = "get">
        <GetInTouch />
       </section>

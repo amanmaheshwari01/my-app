@@ -1,4 +1,4 @@
-import GetInTouch from "@/components/ui/BookAppointment";
+import GetInTouch from "@/components/ui/GetInTouch";
 import Philosophy from "@/components/ui/philosophy";
 import { HeartCrack, Shield, StethoscopeIcon, UserRoundCheck } from "lucide-react";
 import ServiceHero from "@/components/ui/serviceHero";
@@ -15,6 +15,7 @@ const faqs = [
 export default function Page() {
 
  const fertilityServices = [
+  
   {
     title: "IVF Treatment",
     description:

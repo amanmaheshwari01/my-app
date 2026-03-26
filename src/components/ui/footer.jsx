@@ -12,7 +12,7 @@ export default function Footer() {
             Sunshine State <br />
             <span className="tracking-widest text-text-primary">Women's Care</span>
           </h2>
-          <p className="text-sm text-text-primary font-semibold leading-relaxed">
+          <p className="text-sm text-text-primary leading-relaxed">
             Providing compassionate and professional gynecological care for women
             in a comfortable and supportive environment.
           </p>

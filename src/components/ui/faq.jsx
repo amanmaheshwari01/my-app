@@ -59,7 +59,7 @@ export default function FAQ({ data }) {
                   >
                     <span
                       className={`text-sm font-semibold transition-colors ${
-                        isOpen ? "text-text-secondary" : "text-text-primary"
+                        isOpen ? "text-text-primary" : "text-text-primary"
                       }`}
                     >
                       {faq.q}

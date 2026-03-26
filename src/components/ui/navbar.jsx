@@ -38,6 +38,13 @@ export default function Navbar() {
           >
             About
           </Link>
+          
+          <Link
+            href="/gallery"
+            className="text-text-secondary hover:text-text-primary text-xs sm:text-sm md:text-base whitespace-nowrap transition-colors font-medium"
+          >
+            Gallery
+          </Link>
 
           {/* Services Dropdown */}
           <div className="relative group">
@@ -89,7 +96,7 @@ export default function Navbar() {
         </nav>
 
         {/* CTA Button */}
-        <a href = "/#get">
+        <a href = "/contactUs">
         <button 
           className="hidden min-[540px]:block shrink-0 bg-primary hover:bg-primary-strong text-background px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full transition-colors text-xs sm:text-sm md:text-base whitespace-nowrap font-medium cursor-pointer"
         >
@@ -110,7 +117,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`min-[540px]:hidden overflow-hidden transition-all duration-300 ease-in-out w-full ${
-          mobileOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          mobileOpen ? "max-h-125 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         {/* Added max-w-7xl mx-auto w-full here to align mobile links with the logo padding */}
@@ -131,6 +138,14 @@ export default function Navbar() {
             About Page
           </Link>
 
+          <Link
+            href="/gallery"
+            className="py-2 text-base text-text-primary hover:text-primary transition-colors border-b border-border font-medium"
+            onClick={() => setMobileOpen(false)}
+          >
+            Gallery
+          </Link>
+          
           {/* Services Accordion */}
           <div className="border-b border-border">
             <button
@@ -173,6 +188,13 @@ export default function Navbar() {
                 >
                   Prenatal Care
                 </Link>
+                <Link
+                  href="/services/menstrual-hormonal-issues"
+                  className="py-1.5 text-sm text-text-secondary hover:text-primary-strong transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Menstrual and Hormonal Issues
+                </Link>
               </div>
             </div>
           </div>
@@ -185,9 +207,12 @@ export default function Navbar() {
             Contact Us
           </Link>
 
-          <button className="bg-primary text-background px-4 py-2.5 rounded-full w-full mt-3 hover:bg-primary-strong transition-colors text-sm font-medium">
+          <Link href = "/contactUs">
+          <button className="bg-primary text-background px-4 py-2.5 rounded-full w-full mt-3 hover:bg-primary-strong transition-colors text-sm font-medium"
+          onClick={() => setMobileOpen(false)}>
             Book Appointment
           </button>
+          </Link>
         </div>
       </div>
     </header>

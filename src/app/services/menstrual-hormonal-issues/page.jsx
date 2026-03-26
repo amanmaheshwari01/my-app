@@ -96,7 +96,7 @@ export default function MenstrualHormonalIssues() {
         conditions like PCOS, our specialists provide accurate diagnosis and personalized 
         treatment plans. We focus on restoring balance, improving comfort, and supporting 
         your overall reproductive health at every stage of life."
-        imageSrc="/menstrual.png"
+        imageSrc="/menstrualIssues.png"
       />
         <IssuesSection
           eyebrow="You are not alone"
